@@ -6,5 +6,7 @@
     <string name="menu">меню</string>
     <string name="content">Содержимое</string>
     <string name="likes">Лайки</string>
+    <string name="visibility">поделиться</string>
+    <string name="description_like">description_like</string>
 
 </resources>

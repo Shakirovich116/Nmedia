@@ -13,10 +13,11 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/avatar"
-        app:layout_constraintBottom_toBottomOf="id barrier"
+        app:layout_constraintBottom_toBottomOf="@id/barrier"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_foreground" />
+
 
     <TextView
         android:id="@+id/author"
@@ -43,10 +44,10 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="@id/barrier"
         app:layout_constraintEnd_toStartOf="@id/menu"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@id/avatar"
         app:layout_constraintTop_toBottomOf="@id/author"
         tools:text="21 мая в 18:36" />
-
 
     <ImageButton
         android:id="@+id/menu"
