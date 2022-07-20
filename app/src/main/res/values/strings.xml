@@ -3,8 +3,14 @@
     <string name="greeting">NMedia!</string>
     <string name="avatar">avatar</string>
     <string name="menu">menu</string>
+
+    <string name="author" >author</string>
     <string name="content">content</string>
+    <string name="published">published</string>
     <string name="likes">likes</string>
+    <string name="likesCount">likeCount</string>
+    <string name="sharesCount">sharesCount</string>
+    <string name="visibilityCount">visibilityCount</string>
     <string name="visibility">visibility</string>
     <string name="description_like">description_like</string>
 
