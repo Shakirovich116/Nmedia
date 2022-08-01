@@ -21,15 +21,15 @@ class MainActivity : AppCompatActivity() {
             author = "Нетология. Университет интернет-профессий будущего",
             content = "Привет, это новая Нетология! Когда-то Нетология начиналась с интенсивов по онлайн-маркетингу. Затем появились курсы по дизайну, разработке, аналитике и управлению. Мы растём сами и помогаем расти студентам: от новичков до уверенных профессионалов. Но самое важное остаётся с нами: мы верим, что в каждом уже есть сила, которая заставляет хотеть больше, целиться выше, бежать быстрее. Наша миссия — помочь встать на путь роста и начать цепочку перемен → http://netolo.gy/fyb",
             published = "21 мая в 18:36",
-            likes = resources.getString(R.string.likesCount).toInt(),
-           shares = resources.getString(R.string.sharesCount).toInt(),
+            likesCount = resources.getString(R.string.likesCount).toInt(),
+            shares = resources.getString(R.string.sharesCount).toInt(),
             views = resources.getString(R.string.visibilityCount).toInt(),
             likedByMe = false)
 
 
         binding.render(post)
     }
-
+e
     private fun ActivityMainBinding.render(post: Post) {
         author.text = post.author
         content.text = post.content
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         likesCount?.setOnClickListener {
             post.likedByMe = !post.likedByMe
             likesCount.setImageResource(getLikeIconResId(post.likedByMe))
-            likesCount.text = countFormat(if (post.likedByMe) (post.likes + 1) else (post.likes))
+            likesCount.text = countFormat(if (post.likedByMe) (post.likesCount + 1) else (post.likesCount))
         }
 
         shareCount?.setOnClickListener {
