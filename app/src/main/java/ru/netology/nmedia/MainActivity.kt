@@ -1,9 +1,3 @@
-
-
-
-
-
-
 package ru.netology.nmedia
 
 import androidx.appcompat.app.AppCompatActivity
@@ -11,10 +5,8 @@ import android.os.Bundle
 import androidx.annotation.DrawableRes
 import kotlinx.android.synthetic.main.menu.*
 import ru.netology.nmedia.databinding.ActivityMainBinding
-
 import ru.netology.nmedia.post.countFormat
 import ru.netology.nmedia.post.Post
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,14 +17,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val post = Post(
-            id = 0L,
-            author = resources.getString(R.string.author),
-            content = resources.getString(R.string.content),
-            published = resources.getString(R.string.published),
+            id = 1,
+            author = "Нетология. Университет интернет-профессий будущего",
+            content = "Привет, это новая Нетология! Когда-то Нетология начиналась с интенсивов по онлайн-маркетингу. Затем появились курсы по дизайну, разработке, аналитике и управлению. Мы растём сами и помогаем расти студентам: от новичков до уверенных профессионалов. Но самое важное остаётся с нами: мы верим, что в каждом уже есть сила, которая заставляет хотеть больше, целиться выше, бежать быстрее. Наша миссия — помочь встать на путь роста и начать цепочку перемен → http://netolo.gy/fyb",
+            published = "21 мая в 18:36",
             likes = resources.getString(R.string.likesCount).toInt(),
-            shares = resources.getString(R.string.sharesCount).toInt(),
-            views = resources.getString(R.string.visibilityCount).toInt()
-        )
+           shares = resources.getString(R.string.sharesCount).toInt(),
+            views = resources.getString(R.string.visibilityCount).toInt(),
+            likedByMe = false)
+
 
         binding.render(post)
     }
@@ -44,9 +37,7 @@ class MainActivity : AppCompatActivity() {
 
         likesCount?.setOnClickListener {
             post.likedByMe = !post.likedByMe
-            likesCount.setImageResource(
-                getLikeIconResId(post.likedByMe)
-            )
+            likesCount.setImageResource(getLikeIconResId(post.likedByMe))
             likesCount.text = countFormat(if (post.likedByMe) (post.likes + 1) else (post.likes))
         }
 
@@ -57,9 +48,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
     @DrawableRes
     private fun getLikeIconResId(liked: Boolean) =
-        if (liked) R.drawable.like_red_background else R.drawable.likes_background
+        if (liked) R.drawable.ic_like_red_24 else R.drawable.like_24
 
 
 }

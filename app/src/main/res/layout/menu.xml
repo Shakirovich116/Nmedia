@@ -49,6 +49,8 @@
         app:layout_constraintTop_toBottomOf="@id/author"
         tools:text="21 мая в 18:36" />
 
+<!--    "21 мая в 18:36"-->
+
     <ImageButton
         android:id="@+id/menu"
         android:layout_width="wrap_content"
@@ -58,7 +60,7 @@
         android:contentDescription="@string/menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/ic_menu_24" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
@@ -72,7 +74,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android: ="web"
         android:paddingBottom ="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +85,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="content"/>
+        app:constraint_referenced_ids="content"
+        tools:ignore="UnknownId" />
 
     <ImageView
         android:id="@+id/likes"
@@ -94,7 +96,7 @@
         android:contentDescription="@string/description_like"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/barrier2"
-        app:srcCompat="@drawable/likes_foreground" />
+        app:srcCompat="@drawable/like_24" />
 
 
     <TextView
@@ -118,7 +120,7 @@
         app:layout_constraintStart_toStartOf="@id/likesCount"
         app:layout_constraintTop_toTopOf="@id/barrier2"
         app:layout_constraintStart_toEndOf="@id/likesCount"
-        app:srcCompat="@drawable/share_foreground"
+        app:srcCompat="@drawable/ic_share_24"
         tools:layout_editor_absoluteX="80dp"/>
 
 
@@ -143,7 +145,7 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toEndOf="@id/shareCount"
         app:layout_constraintTop_toTopOf="@id/barrier2"
-        app:srcCompat="@drawable/visitable_foreground" />
+        app:srcCompat="@drawable/ic_visitable_24" />
 
     <TextView
         android:id="@+id/visibilityCount"
