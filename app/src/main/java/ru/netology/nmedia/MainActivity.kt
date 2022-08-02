@@ -37,9 +37,10 @@ class MainActivity : AppCompatActivity() {
 
         likesCount?.setOnClickListener {
             post.likedByMe = !post.likedByMe
-            likesCount.setImageResource(getLikeIconResId(post.likedByMe))
+            likes.setImageResource(getLikeIconResId(post.likedByMe))
             likesCount.text = countFormat(if (post.likedByMe) (post.likesCount + 1) else (post.likesCount))
         }
+
 
         shareCount?.setOnClickListener {
             shareCount.text = countFormat(post.sharesCount++)
@@ -50,8 +51,8 @@ class MainActivity : AppCompatActivity() {
 
 
     @DrawableRes
-    private fun getLikeIconResId(liked: Boolean) =
-        if (liked) R.drawable.ic_like_red_24 else R.drawable.like_24
+    private fun getLikeIconResId(likedByMe: Boolean) =
+        if (likedByMe) R.drawable.ic_like_red_24 else R.drawable.like_24
 
 
 }
