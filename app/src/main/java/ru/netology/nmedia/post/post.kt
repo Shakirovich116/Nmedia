@@ -18,7 +18,6 @@ data class Post(
 
 fun countFormat(likesCount: Int): String {
     return when (likesCount) {
-        in 1..999 -> "${likesCount.toString()}"
         in 1000..1099 ->"${roundNoDecimal(likesCount.toDouble()/1_000.0)}K"
         in 1100..9_999 ->"${roundWithDecimal(likesCount.toDouble()/1_000.0)}K"
         in 10_000..999_999 ->"${roundNoDecimal(likesCount.toDouble()/1_000.0)}K"

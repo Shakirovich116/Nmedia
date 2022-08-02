@@ -12,6 +12,8 @@
     <string name="visibility">Просмотры</string>
     <string name="visibilityCount">Количество просмотров</string>
     <string name="description_like">description_like</string>
+    <string name="description_sharesCount">description_sharesCount</string>
+    <string name="description_visibilityCount">description visibilityCount</string>
     <string name="author" >автор</string>
 
 </resources>

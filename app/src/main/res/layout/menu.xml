@@ -16,7 +16,7 @@
         app:layout_constraintBottom_toBottomOf="@id/barrier"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_foreground" />
+        app:srcCompat="@drawable/netology" />
 
 
     <TextView
@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@id/author"
         tools:text="21 мая в 18:36" />
 
-<!--    "21 мая в 18:36"-->
+
 
     <ImageButton
         android:id="@+id/menu"
@@ -105,6 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:paddingStart ="5dp"
+        android:paddingEnd="0dp"
         app:layout_constraintHorizontal_chainStyle ="packed"
         app:layout_constraintStart_toEndOf="@+id/likes"
         app:layout_constraintTop_toTopOf="@id/barrier2"
@@ -130,6 +131,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:paddingStart="5dp"
+        android:paddingEnd="0dp"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toEndOf="@+id/share"
         app:layout_constraintTop_toTopOf="@id/barrier2"
@@ -153,6 +155,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:paddingStart="5dp"
+        android:paddingEnd="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_chainStyle="packed"
