@@ -10,10 +10,10 @@
     <string name="likes">likes</string>
     <string name="likesCount">likeCount</string>
     <string name="sharesCount">sharesCount</string>
-    <string name="visibilityCount">visibilityCount</string>
+    <string name="viewsCount">visibilityCount</string>
     <string name="visibility">visibility</string>
     <string name="description_like">description_like</string>
     <string name="description_sharesCount">description_sharesCount</string>
-    <string name="description_visibilityCount">description visibilityCount</string>
+    <string name="description_viewsCount">description viewsCount</string>
 
 </resources>
