@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-//        
+//
 //            viewModel.clickLikedPost()
 //
 //            viewModel.clickSharePost()
